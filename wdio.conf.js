@@ -1,4 +1,4 @@
-import allureReporter from 'wdio/allure-reporter';
+import allureReporter from '@wdio/allure-reporter';
 
 
 exports.config = {
