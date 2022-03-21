@@ -1,6 +1,6 @@
 class AuthPage {
 
-  //Page objects
+  
      get input_CreateAccountEmail(){
           return $("#email_create");
      }
@@ -118,9 +118,6 @@ class AuthPage {
         return $("#SubmitLogin");
     }
 
-
-  //Actions
-
   createAccount = async(emailId,address)=>{
             await this.input_CreateAccountEmail.waitForExist({ timeout: 5000 });
           await this.input_CreateAccountEmail.setValue(emailId);
@@ -135,18 +132,13 @@ class AuthPage {
           await this.input_Email.setValue(emailId);
           await this.input_Password.setValue("password123");
 
-          //Date of birth
-
           await this.drpbx_Days.selectByIndex(12);
           await this.drpbx_Months.selectByAttribute("value","3");
           await this.drpbx_Years.selectByAttribute("value","1992");
 
-          //checkbox
 
           await this.checkbox_NewsLetter.click();
           await this.checkbox_UniformOption.clcik();
-
-          //Address
 
           await this.input_address_FirstName.setValue(address.firstName);
           await this.input_address_LastName.setValue(address.LastName);
@@ -181,4 +173,4 @@ class AuthPage {
   };
 }
 
-export default new AuthPage();
+export default new AuthPage();gitt

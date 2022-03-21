@@ -4,7 +4,7 @@
   "description": "to automate practice website",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/wdio wdio.conf.js",
+    "test": "node_modules/.bin/wdio wdio.conf.js",
     "generate-report": "allure generate allure-results --clean && allure open"
   },
   "author": "Anuradha Varankar",

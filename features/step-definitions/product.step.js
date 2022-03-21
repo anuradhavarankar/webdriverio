@@ -2,7 +2,7 @@ import { Given, When, Then } from "@cucumber/cucumber";
 import productPage from '../pageobjects/product.page';
 
 
-Given (/^ I add below produacts to cart$/, async (table) =>{
+Given (/^ I add below products to cart$/, async (table) =>{
 
 
     await productPage.addProducts(table);

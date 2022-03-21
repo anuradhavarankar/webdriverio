@@ -2,7 +2,7 @@ import { Given,When,Then } from "@cucumber/cucumber";
 import faker from "faker";
 import authPage from "../pageobjects/auth.page";
 import homePage from "../pageobjects/home.page";
-import allureReporter from 'wdio/allure-reporter';
+import allureReporter from '@wdio/allure-reporter';
 
 Then(/^create an account with random username$/, async ()=>{
 
