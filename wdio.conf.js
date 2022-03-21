@@ -33,13 +33,13 @@ exports.config = {
 
   reporters: [
     "spec",[
-      ("allure",
+      "allure",
       {
         outputDir: "allure-results",
         disableWebdriverStepsReporting: true,
         disableWebdriverScreenshotsReporting: false,
         useCucumberStepReporter: true,
-      })
+      }
     ],
   ],
 

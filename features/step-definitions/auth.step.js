@@ -1,5 +1,5 @@
 import { Given,When,Then } from "@cucumber/cucumber";
-import faker from "faker";
+import faker from "@faker-js/faker";
 import authPage from "../pageobjects/auth.page";
 import homePage from "../pageobjects/home.page";
 import allureReporter from '@wdio/allure-reporter';
@@ -14,10 +14,12 @@ Then(/^create an account with random username$/, async ()=>{
 
     allureReporter.addSeverity("critical");
 
+    const { faker } = require('@faker-js/faker');
+    
     const addressObj = {
         firstName: faker.name.firstName(),
         lastName: faker.name.lastName(),
-        company: faker.name.companyName(),
+        company: faker.company.companyName(),
         address1: faker.address.streetAddress(),
         address2: faker.random.alphaNumeric(5),
     };
